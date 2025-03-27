@@ -91,6 +91,9 @@ section p {
 section h1 {
     text-align: center;
 }
+section h2 {
+    text-align: center;
+}
 footer {
     background: #222;
     color: #7b7b7b;
