@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background: #fbfbfb;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+a:hover {
+    color: #4ba657;
+}
+
+header {
+    background: #fff;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #4ba657;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #000;
+}
+
+main {
+    flex: 1;
+    padding: 100px 20px 20px;
+}
+
+section {
+    padding: 50px 20px;
+    background: transparent;
+    margin: 20px auto;
+    width: 75%; /*tamanho da margem dos textos */
+    text-justify: auto;
+}
+
+section p {
+    text-align: column;
+}
+
+footer {
+    background: #222;
+    color: #7b7b7b;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #dddddd;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+.footer-links a:hover {
+    color: #4ba657;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #4ba657;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0;
+        text-align: center;
+        
+    }
+
+    .nav-links a {
+        padding: 15px;
+        display: block;
+        color: #000;
+    }
+
+    .menu-toggle {
+        display: block; 
+        
+    }
+}
