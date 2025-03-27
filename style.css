@@ -81,7 +81,7 @@ section {
     padding: 50px 20px;
     background: transparent;
     margin: 20px auto;
-    width: 75%; /*tamanho da margem dos textos */
+    width: 80%; /*tamanho da margem dos textos */
     text-justify: auto;
 }
 
@@ -156,7 +156,7 @@ footer {
     }
 
     .menu-toggle {
-        display: block; 
+        display: block;
         
     }
 }
