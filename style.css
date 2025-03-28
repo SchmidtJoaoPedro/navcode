@@ -157,3 +157,17 @@ footer {
         
     }
 }
+@keyframes colorChange {
+    0% { color: #000; }
+    50% { color: #4ba657; }
+    100% { color: #000000; }
+}
+.texto-animado {
+    text-decoration: none;
+    color: #7c0000;
+}
+.texto-animado:hover {
+    text-decoration: none;
+    font-weight: bold;
+    animation: colorChange 1s infinite; /* tempo da animação */
+}
