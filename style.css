@@ -79,20 +79,12 @@ main {
 
 section {
     padding: 50px 20px;
-    background: transparent;
     margin: 20px auto;
     width: 80%; /*tamanho da margem dos textos */
     text-justify: auto;
-}
-
-section p {
-    text-align: column;
-}
-section h1 {
-    text-align: center;
-}
-section h2 {
-    text-align: center;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 footer {
     background: #222;
