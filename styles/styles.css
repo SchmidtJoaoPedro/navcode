@@ -11,11 +11,12 @@ body {
     background-color: #fff9ea;
 }
 
-.btn-default {      /*botão chame aqui*/
+.btn-default {      /*botão login*/
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #1d1d1dad;
     background-color: #ffcb45;
     border-radius: 12px;
     padding: 10px 14px;
@@ -26,4 +27,8 @@ body {
 
 .btn-default:hover {
     background-color: #f8d477;
+}
+
+.material-symbols-outlined{
+    color: #1d1d1dad;
 }
