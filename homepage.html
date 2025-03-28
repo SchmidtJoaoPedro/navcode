@@ -1,99 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina inicial | Navcode</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Pagina inicial</title>
 </head>
-    <body>
-         <header>
-         <div class="logo">
-             <a href="homepage.html">GO!RECICLE</a>
-         </div>
-         <nav>
-             <ul class="nav-links">
-                 <li><a href="#">Ambiental</a></li>
-                 <li><a href="#">Classificação</a></li>
-                 <li><a href="#">Recicle</a></li>
-                 <li><a href="#">Leis</a></li>
-             </ul>
-         </nav>
-         <div class="menu-toggle">
-             <i class="fas fa-bars"></i>
-         </div>
-</header>
-    <main> 
-        <div class="meio1"> 
-     <section id="introducao">
-        <h2>Introdução</h2>
-        <p>O lixo eletrônico é uma das questões mais desafiadoras no cenário global contemporâneo. O rápido avanço tecnológico, aliado ao consumo excessivo de dispositivos eletrônicos, tem gerado um aumento significativo de resíduos que, se não gerenciados adequadamente, podem causar sérios danos ao meio ambiente e à saúde humana.</p>
-    </section>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-recycle" id="nav_logo">Go!Recycle</i>
 
-    <section id="impactos">
-        <h2>Impactos Ambientais e Sociais</h2>
-        <h3>Impactos Ambientais</h3>
-        <ul>
-            <p></p><strong>Contaminação do solo:</strong> Metais pesados como <abbr class="texto-animado" title="Encontrado em soldas de placas de circuito e outros componentes, o chumbo é um material extremamente tóxico que, se entrar em contato com o solo, pode afetar plantas, animais e até humanos.
-            ">chumbo</abbr>, <abbr class="texto-animado"  title="Usado em telas de LCD e outros componentes, o mercúrio é altamente tóxico e pode contaminar o solo, além de ser muito difícil de remover">mercúrio</abbr> e <abbr class="texto-animado"  title="sado em baterias, o cádmio é outro metal pesado que pode se infiltrar no solo e afetar a biodiversidade.
-            ">Cádmio</abbr> poluem o solo.</p>
+            <ul id="nav_list">
+                <li class="nav-item">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pag1">Ambiental</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pag2">Social</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pag3">Eletrônicos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pag4">Outros</a>
+                </li>
+            </ul>
 
-            <p><strong>Poluição da água:</strong> Substâncias tóxicas podem afetar ecossistemas aquáticos.</p>
-            <p><strong>Gases tóxicos:</strong> A queima de componentes libera substâncias nocivas.</p>
-        </ul>
-        <h3>Impactos Sociais</h3>
-        <ul>
-            <p><strong>Saúde pública:</strong> Exposição a metais pesados pode causar doenças graves.</p>
-            <p><strong>Desigualdade social:</strong> Trabalhadores informais lidam com lixo eletrônico sem proteção.</p>
-        </ul>
-    </section>
+            <button class="btn-defult">
+                Chame agui
+            </button>
 
-    <section id="classificacao">
-        <h2>Classificação do Lixo Eletrônico</h2>
-        <p>Os principais tipos de lixo eletrônico incluem:</p>
-        <ul>
-            <p>Celulares e smartphones</p>
-            <p>Computadores e notebooks</p>
-            <p>Baterias e carregadores</p>
-            <p>Televisores e monitores</p>
-        </ul>
-    </section>
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
 
-    <section id="legislacao">
-        <h2>Legislação Vigente</h2>
-        <p>As principais leis que regulamentam o descarte de lixo eletrônico no Brasil incluem:</p>
-        <ul>
-            <p><strong>Lei 12.305/2010:</strong> Política Nacional de Resíduos Sólidos.</p>
-            <p><strong>Resolução Conama 452/2012:</strong> Regras para descarte de baterias.</p>
-            <p><strong>Decreto nº 10.240/2020:</strong> Logística reversa de eletrônicos.</p>
-        </ul>
-    </section>
+        <div id="mobile_menu">
 
-    <section id="conclusao">
-        <h2>Conclusão</h2>
-        <p>A conscientização e a implementação de políticas públicas são essenciais para reduzir os impactos do lixo eletrônico.</p>
-    </section>
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pag1">Ambiental</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pag2">Social</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pag3">Eletrônicos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pag4">Outros</a>
+                </li>
+            </ul>
 
-       </div> 
-    </main>
-
-
-    <footer>
-        <div class="footer-links">
-            <a target="_blank" href="alunos.html">Alunos</a>
-            <a target="_blank" href ="https://www.unifenas.br/">Unifenas</a>
-            <a target="_blank" href="referencias.html">Referências</a>
+            <button class="btn-defult">
+                Chame agui
+            </button>
         </div>
-        <div class="social-icons">
-             <a target="_blank" href="https://brasilescola.uol.com.br/biologia/ coleta-seletiva-casa.htm"><span  class="material-symbols-outlined">recycling</span></a>
-        </div>
-        <div class="footer-links">
-            <a href="#top">-Topo da página-</a>
-        </div>
-        <p>© 2025 <a href ="paginainicial.html">Go!Recicle</a>. Todos os direitos reservados.</p>
-    </footer>
-    <script src="javascript/script.js"></script>
-    </body>
+    </header>
+</body>
 </html>
