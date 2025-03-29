@@ -10,7 +10,7 @@ header {
     justify-content: space-between;
 }
 
- #nav_logo {        /* cor da logo */
+#nav_logo {        /* cor da logo */
     font-size: 24px;
     color: #e9a209;
 }
@@ -28,7 +28,7 @@ header {
 
 .nav-item.active a {
     color: #1d1d1dad;
-    border-bottom: 3px solid #ffe100; /*cor da linha menor*/
+    border-bottom: 3px solid #ffe100; /*cor da linha menor */
 }
 
 #mobile_btn {

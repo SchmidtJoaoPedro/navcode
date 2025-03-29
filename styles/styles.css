@@ -10,6 +10,9 @@
 body {
     background-color: #fff9ea;
 }
+section {
+    padding: 28px 8%;
+}
 
 .btn-default {      /*botão login*/
     border: none;
