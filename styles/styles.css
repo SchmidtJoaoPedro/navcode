@@ -55,10 +55,10 @@ section {
 }
 
 .section-title {
+    font-size: 2.1875rem;
+} 
+
+.section-subtitle {
     color: var(--color-primary-6);
     font-size: 1.563rem;
 }
-
-.section-subtitle {
-    font-size: 2.1875rem;
-} 
