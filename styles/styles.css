@@ -5,6 +5,19 @@
 @import url('footer.css');
 @import url('login.css');
 
+:root {
+    --color-primary-1: #fff9ea; /* body  */
+    --color-primary-2: #ffe8b4; /*   */
+    --color-primary-3: #f8d477; /* btn-hover  */
+    --color-primary-4: #ffe100; /*   */
+    --color-primary-5: #ffcb45; /* btn */
+    --color-primary-6: #e9a209; /*   */
+    --color-primary-7: #4ba657; /* footer hover  */
+
+    --color-neutral-0: #fff;
+    --color-neutral-1: #1d1d1d;
+}
+
 * {
    font-family: 'poppins' , sans-serif;
    margin: 0;
@@ -13,7 +26,7 @@
 }
 
 body {
-    background-color: #fff9ea;
+    background-color: var(--color-primary-1);
 }
 section {
     padding: 28px 8%;
@@ -24,15 +37,15 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #1d1d1dad;
-    background-color: #ffcb45;
+    background-color: var(--color-primary-5);
     border-radius: 12px;
     padding: 10px 14px;
     font-weight: 600;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transition: background-color .3s ease;
 }
 
 .btn-default:hover {
-    background-color: #f8d477;
+    background-color: var(--color-primary-3);
 }

@@ -18,36 +18,36 @@ footer {
 }
 
 #footer-links a:hover {
-    color: #4ba657;
+    color: var(--color-primary-7);
 }
 
 #social-icons {
     margin-top: 10px;
-    color: #fff;
+    color: var(--color-neutral-0);
 }
 
 #social-icons a {
     margin: 0 10px;
-    color: #fff;
+    color: var(--color-neutral-0);
     font-size: 20px;
     transition: 0.4s;
 }
 
 #social-icons a:hover {
     transform: scale(1.2);
-    color: #4ba657;
+    color: var(--color-primary-7);
 }
 
 #footer-copyright a {
-    color: #fff;
+    color: var(--color-neutral-0);
     text-decoration: none;
     transition: 0.4s;
 }
 
 #footer-copyright a:hover {
-    color: #4ba657;
+    color: var(--color-primary-7);
 }
 
 .material-symbols-outlined footer {
-    color: #fff;
+    color: var(--color-neutral-0);
 }
