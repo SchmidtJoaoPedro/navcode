@@ -1,6 +1,6 @@
 footer {
-    background: #222;
-    color: #7b7b7b;
+    background: var(--color-primary-10);
+    color: var(--color-primary-8);
     text-align: center;
     padding: 20px;
     width: 100%;
@@ -11,7 +11,7 @@ footer {
 }
 
 #footer-links a {
-    color: #dddddd;
+    color: var(--color-primary-9);
     margin: 0 15px;
     text-decoration: none;
     transition: color 0.4s;
