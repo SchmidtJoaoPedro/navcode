@@ -19,7 +19,7 @@ section {
     padding: 28px 8%;
 }
 
-.btn-default {      /*botão login*/
+.btn-default {
     border: none;
     display: flex;
     align-items: center;
@@ -35,8 +35,4 @@ section {
 
 .btn-default:hover {
     background-color: #f8d477;
-}
-
-.material-symbols-outlined{
-    color: #1d1d1dad;
 }

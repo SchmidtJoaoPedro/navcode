@@ -43,6 +43,10 @@ header {
     display: none;
 }
 
+.material-symbols-outlined header {
+    color: #1d1d1dad;
+}
+
 @media screen and (max-width: 1170px) {
     #nav_list, 
     #navbar .btn-default {
