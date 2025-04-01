@@ -44,7 +44,6 @@
     width: fit-content;
     width: 900px;  /* Largura fixa */
     height: 800px; /* Altura fixa */
-
 }
 
 @media screen and (max-width: 1170px) {

@@ -1,18 +1,3 @@
-/* footer {
-    background-color: #ffe8b4;
-}
-
-#footer_items {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 8% 24px 8%;
-    align-items: center;
-}
-
-#copyright {
-    color: #1d1d1d;
-    font-weight: 500;
-} */
 footer {
     background: #222;
     color: #7b7b7b;
@@ -53,16 +38,16 @@ footer {
     color: #4ba657;
 }
 
-.material-symbols-outlined footer {
-    color: #fff;
-}
-
-a {
+#footer-copyright a {
     color: #fff;
     text-decoration: none;
     transition: 0.4s;
 }
 
-a:hover {
+#footer-copyright a:hover {
     color: #4ba657;
+}
+
+.material-symbols-outlined footer {
+    color: #fff;
 }
