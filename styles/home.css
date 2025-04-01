@@ -34,26 +34,17 @@
 #banner {
     display: flex;
     align-items: flex-start;
-    justify-content: end;
+    justify-content: center;
     width: 70%;
     right: 10;
-    z-index: 2;
+    z-index: 1;
 }
 
 #banner img {
-    height: 100%;
     width: fit-content;
-}
+    width: 900px;  /* Largura fixa */
+    height: 800px; /* Altura fixa */
 
-.shape {
-    background-color: var(--color-primary-2);
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    border-radius: 40% 30% 0% 20%;
-    top: 0;
-    right: 0;
-    z-index: 1;
 }
 
 @media screen and (max-width: 1170px) {
@@ -63,8 +54,7 @@
     }
 
     #banner,
-    #banner img,
-    #home .shape {
+    #banner img {
         display: none;
     }
 
