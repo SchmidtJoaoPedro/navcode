@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --color-primary-1: #fff9ea; /* body  */
+    --color-primary-2: #1d1d1dad; /* navbar letras não select */
+    --color-primary-3: #f8d477; /* btn-hover */
+    --color-primary-4: #ffe100; /* linha navbar */
+    --color-primary-5: #ffcb45; /* btn */
+    --color-primary-6: #e9a209; /* cor da logo */
+    --color-primary-7: #4ba657; /* link hover footer */
+    --color-primary-8: #7b7b7b; /* copyright footer */
+    --color-primary-9: #dddddd; /* link a footer */
+    --color-primary-10: #222; /* footer */
+
+    --color-neutral-0: #fff;    /* box mid*/
+    --color-neutral-1: #1d1d1d; /* navbar select */
+}
+
+* {
+   font-family: 'poppins' , sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-primary-1);
+}
+section {
+    padding: 28px 8%;
+}
+
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary-5);
+    color: var(--color-primary-2);
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.btn-default:hover {
+    background-color: var(--color-primary-3);
+}
+
+.section-title {
+    font-size: 2.1875rem;
+} 
+
+.section-subtitle {
+    color: var(--color-primary-6);
+    font-size: 1.563rem;
+}
+
+header {
+    width: 100%;
+    padding: 28px 8%;
+    position: sticky;
+    top: 0;
+    background-color: var(--color-primary-1);
+    z-index: 2;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_logo {
+    font-size: 24px;
+    color: var(--color-primary-6);
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+.nav-item a {
+    text-decoration: none;
+    color: var(--color-primary-2);
+    font-weight: 600;
+}
+
+.nav-item.active a {
+    color: var(--color-neutral-1);
+    border-bottom: 3px solid var(--color-primary-4);
+}
+
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+.material-symbols-outlined header {
+    color: var(--color-primary-2);
+}
+
+#home {
+    display: flex;
+    min-height: calc(100vh - 91px);
+    position: relative;
+}
+
+#cta {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+}
+
+#cta .title {
+    font-size: 4rem;
+    color: var(--color-neutral-1);
+
+}
+
+#cta .title span {
+    color: var(--color-primary-6);
+}
+
+#cta .description {
+    font-size: 1.2rem;
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+    color: var(--color-neutral-1);;
+}
+
+#banner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 70%;
+    right: 10;
+    z-index: 1;
+}
+
+#banner img {
+    width: fit-content;
+    width: 900px;  /* Largura fixa */
+    height: 800px; /* Altura fixa */
+}
+
+footer {
+    background: var(--color-primary-10);
+    color: var(--color-primary-8);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+#footer-links {
+    margin-bottom: 10px;
+}
+
+#footer-links a {
+    color: var(--color-primary-9);
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+#footer-links a:hover {
+    color: var(--color-primary-7);
+}
+
+#social-icons {
+    margin-top: 10px;
+    color: var(--color-neutral-0);
+}
+
+#social-icons a {
+    margin: 0 10px;
+    color: var(--color-neutral-0);
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+#social-icons a:hover {
+    transform: scale(1.2);
+    color: var(--color-primary-7);
+}
+
+#footer-copyright a {
+    color: var(--color-neutral-0);
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+#footer-copyright a:hover {
+    color: var(--color-primary-7);
+}
+
+.material-symbols-outlined footer {
+    color: var(--color-neutral-0);
+}
+
+@media screen and (max-width: 1170px) {
+    #nav_list, 
+    #navbar .btn-default {
+        display: none;
+    }
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+    
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #banner,
+    #banner img {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #phone_button button {
+        display: none;
+    }
+}
