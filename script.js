@@ -40,13 +40,13 @@ $(document).ready(function () {
     distance: "20%"
   });
 
-  ScrollReveal().reveal(".dish", {
+  ScrollReveal().reveal("#introduction", {
     origin: "left",
     duration: 2000,
     distance: "20%"
   });
 
-  ScrollReveal().reveal("#testimonial_chef", {
+  ScrollReveal().reveal("#impacts", {
     origin: "left",
     duration: 1000,
     distance: "20%"
