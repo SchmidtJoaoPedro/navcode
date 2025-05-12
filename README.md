@@ -1,4 +1,4 @@
-# README - Descarte de Lixo Eletrônico em Alfenas - MG
+# Descarte de Lixo Eletrônico em Alfenas - MG
 
 ## 📄 Descrição
 
