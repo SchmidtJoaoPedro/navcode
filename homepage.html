@@ -9,7 +9,6 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="images/planeta-terra.png" type="image/x-icon">
     <title>Pagina inicial | Go!Recycle</title>              
 </head>
 <body>
@@ -28,15 +27,15 @@
                     <a href="#Social">Social</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#Lixo Eletrônico">Lixo eletrônico</a>
+                    <a href="#Lixo_Eletrônico">Lixo eletrônico</a>
                 </li>
                 <li class="nav-item">
                     <a href="#Outros">Outros</a>
                 </li>
             </ul>
 
-            <button class="btn-default">
-                 Encontre-
+            <button class="btn-default" onclick="window.location.href='pontos_re.html'">
+                <span class="material-symbols-outlined">account_circle</span> Pontos de Coleta
             </button>
 
             <button id="mobile_btn">
@@ -54,10 +53,10 @@
                     <a href="#Ambiental">Ambiental</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#pag2">Social</a>
+                    <a href="#Social">Social</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#pag3">Eletrônicos</a>
+                    <a href="#Lixo_Eletrônico">Eletrônicos</a>
                 </li>
                 <li class="nav-item">
                     <a href="#Outros">Outros</a>
@@ -86,11 +85,11 @@
             </div>
 
             <div id="banner">
-                <img src="images/1.jpg" alt="cellfone">
+                <img src="images/ChatGPT Image 3 de abr. de 2025, 13_16_28.png" alt="cellfone">
             </div>
         </section> <br>
 
-    <section id="Ambiental">
+    <section class="Intro" id="Intro">
         <div id="introduction">
             <div id="intro_title">
             <h1>Introdução</h1>
@@ -101,7 +100,7 @@
             </div> <br>
 
             <div id="intro_end">
-                <p>Sendo assim, este trabalho tem como objetivo analisar os impactos ambientais e sociais do lixo eletrônico e investigar a legislação vigente que regula o descarte e a reciclagem desses resíduos solidos no Brasil.</p>
+                <p>Sendo assim, este trabalho tem como objetivo analisar os impactos ambientais e sociais do lixo eletrônico e investigar a legislação vigente que regula o descarte e a reciclagem desses resíduos no Brasil.</p>
             </div>
         </div>
 
@@ -109,7 +108,7 @@
 
     <!--PAUSE BREAK-->
 
-    <section  class="Impactos">
+    <section  class="Impactos" id="Ambiental">
         <div id="impacts">
             <div class="nice_title">
                 <h1>Impactos do Lixo Eletrônico</h1>
@@ -120,20 +119,22 @@
 
                 <h3>Contaminação do Solo:</h3>
 
-                <li><span class="spanca_xota">Mercúrio:</span> Usado em telas de LCD e outros componentes, o mercúrio é altamente tóxico e pode contaminar o solo, além de ser muito difícil de remover.</li>
-                <li><span class="spanca_xota">Chumbo:</span> Encontrado em soldas de placas de circuito e outros componentes, o chumbo é um material extremamente tóxico que, se entrar em contato com o solo, pode afetar plantas, animais e até humanos.</li>
-                <li><span class="spanca_xota">Cádmio:</span> Usado em baterias, o cádmio é outro metal pesado que pode se infiltrar no solo e afetar a biodiversidade.</li><br>
+                <li><span class="span_text">Mercúrio:</span> Usado em telas de LCD e outros componentes, o mercúrio é altamente tóxico e pode contaminar o solo, além de ser muito difícil de remover.</li>
+                <li><span class="span_text">Chumbo:</span> Encontrado em soldas de placas de circuito e outros componentes, o chumbo é um material extremamente tóxico que, se entrar em contato com o solo, pode afetar plantas, animais e até humanos.</li>
+                <li><span class="span_text">Cádmio:</span> Usado em baterias, o cádmio é outro metal pesado que pode se infiltrar no solo e afetar a biodiversidade.</li><br>
 
                 <h3> Contaminação da Água:</h3>
 
-                <li><span class="spanca_xota">Ecossistemas aquáticos: </span> Animais marinhos e organismos aquáticos podem ser envenenados por essas toxinas, prejudicando a biodiversidade e afetando a cadeia alimentar.</li>
-                <li><span class="spanca_xota">Água Potável:</span> A contaminação da água pode ter efeitos diretos sobre as populações humanas que dependem de fontes de água contaminadas, aumentando os riscos de doenças.</li> <br>
+                <li><span class="span_text">Ecossistemas aquáticos: </span> Animais marinhos e organismos aquáticos podem ser envenenados por essas toxinas, prejudicando a biodiversidade e afetando a cadeia alimentar.</li>
+                <li><span class="span_text">Água Potável:</span> A contaminação da água pode ter efeitos diretos sobre as populações humanas que dependem de fontes de água contaminadas, aumentando os riscos de doenças.</li> <br>
                 
-                <p class="impacts_amb_alt-itens">- Há a <strong>emissão de gases tóxicos</strong>, como o Dióxido de Carbono (<span class="spanca_xota">CO2</span>) e o Metano (<span class="spanca_xota">CH4</span>) que contribuem para o <span class="spanca_xota">Efeito Estufa</span> e o <span class="spanca_xota">Aquecimento Global</span>, além da liberação de <a href="https://www.infoescola.com/compostos-quimicos/dioxina/">Dioxinas</a> e <a href="https://www.infoescola.com/quimica/furanos/">Furanos</a>, que prejudicam o Sistema Imunológico, causam problema respiratório, doenças cardiovasculares e <span class="spanca_xota">Câncer</span>.
+                <div id="bleh">
+                <p class="impacts_amb_alt-itens">- Há a <strong>emissão de gases tóxicos</strong>, como o Dióxido de Carbono (<span class="span_text">CO2</span>) e o Metano (<span class="span_text">CH4</span>) que contribuem para o <span class="span_text">Efeito Estufa</span> e o <span class="span_text">Aquecimento Global</span>, além da liberação de <a href="https://www.infoescola.com/compostos-quimicos/dioxina/">Dioxinas</a> e <a href="https://www.infoescola.com/quimica/furanos/">Furanos</a>, que prejudicam o Sistema Imunológico, causam problema respiratório, doenças cardiovasculares e <span class="span_text">Câncer</span>.
 
                 <p>- Com a contaminação do solo e da água, é reduzido a disponibilidade de alimento e água limpa para muitas espécies, ameaçando suas populações e destruindo habitats.</p>
                 
-                - Além disso, é notável o desperdício de recursos <span class="spanca_xota">naturais</span>, como o Cobre (<span class="spanca_xota">Cu</span>), Prata (<span class="spanca_xota">Ag</span>) e Ouro (<span class="spanca_xota">Au</span>), os quais são muito utilizados na fabricação de circuitos e cabos, e <span class="spanca_xota">artificiais</span>, sendo esses o plástico e o vidro que poderiam ser reciclados e usados para fabricação de novos produtos. No caso dos metais pesados, eles prejudicam os animais, afetando seu sistema digestivo.</p>
+                - Além disso, é notável o desperdício de recursos <span class="span_text">naturais</span>, como o Cobre (<span class="span_text">Cu</span>), Prata (<span class="span_text">Ag</span>) e Ouro (<span class="span_text">Au</span>), os quais são muito utilizados na fabricação de circuitos e cabos, e <span class="span_text">artificiais</span>, sendo esses o plástico e o vidro que poderiam ser reciclados e usados para fabricação de novos produtos. No caso dos metais pesados, eles prejudicam os animais, afetando seu sistema digestivo.</p>
+                </div>
             </div><br><br>
             
 
@@ -143,18 +144,20 @@
 
                 <h3>Problemas na Saúde Pública:</h3>
 
-                <li><span class="spanca_xota">Doenças respiratórias: </span>A inalação de vapores tóxicos gerados pela queima de eletrônicos pode prejudicar os pulmões.</li>
-                <li><span class="spanca_xota">Intoxicação e câncer: </span>A exposição contínua a metais pesados pode causar intoxicações agudas e doenças crônicas, incluindo câncer.</li>
-                <li><span class="spanca_xota">Distúrbios no sistema nervoso:</span> O mercúrio e o chumbo, por exemplo, são neurotóxicos e podem afetar o cérebro, causando problemas de desenvolvimento em crianças e distúrbios neurológicos em adultos.</li>
-                <li><span class="spanca_xota">Contaminação da água e do solo:</span> Substâncias tóxicas que contaminam o solo e a água podem afetar diretamente as populações que dependem desses recursos para consumo, além de prejudicar a segurança alimentar, caso as plantações e os animais também sejam contaminados.</li><br>
+                <li><span class="span_text">Doenças respiratórias: </span>A inalação de vapores tóxicos gerados pela queima de eletrônicos pode prejudicar os pulmões.</li>
+                <li><span class="span_text">Intoxicação e câncer: </span>A exposição contínua a metais pesados pode causar intoxicações agudas e doenças crônicas, incluindo câncer.</li>
+                <li><span class="span_text">Distúrbios no sistema nervoso:</span> O mercúrio e o chumbo, por exemplo, são neurotóxicos e podem afetar o cérebro, causando problemas de desenvolvimento em crianças e distúrbios neurológicos em adultos.</li>
+                <li><span class="span_text">Contaminação da água e do solo:</span> Substâncias tóxicas que contaminam o solo e a água podem afetar diretamente as populações que dependem desses recursos para consumo, além de prejudicar a segurança alimentar, caso as plantações e os animais também sejam contaminados.</li><br>
+            
+                <div id="bleh">
+                <p class="impacts_amb_alt-itens">- Em algumas regiões, principalmente em <span class="span_text">países em desenvolvimento</span>, o lixo eletrônico é reciclado de forma informal, com trabalhadores, muitas vezes <span class="span_text">crianças</span>, desmontando os dispositivos sem qualquer proteção. Isso resulta em exposição direta a <span class="span_text">substâncias tóxicas</span>, além de condições de trabalho extremamente perigosas e insalubres.</p>
 
-                <p class="impacts_amb_alt-itens">- Em algumas regiões, principalmente em <span class="spanca_xota">países em desenvolvimento</span>, o lixo eletrônico é reciclado de forma informal, com trabalhadores, muitas vezes <span class="spanca_xota">crianças</span>, desmontando os dispositivos sem qualquer proteção. Isso resulta em exposição direta a <span class="spanca_xota">substâncias tóxicas</span>, além de condições de trabalho extremamente perigosas e insalubres.</p>
-
-                <p class="impacts_amb_alt-itens">- Comunidades de baixa renda, muitas vezes situadas em <span class="spanca_xota">áreas periféricas</span> ou próximas a <a href="https://www.ecycle.com.br/lixao/">lixões</a> e <a href="https://www.ecycle.com.br/aterro-sanitario/">aterros sanitários</a>, são mais propensas a sofrer com a poluição resultante do <span class="spanca_xota">descarte inadequado de lixo eletrônico</span>. Elas enfrentam o impacto de solos e águas contaminados, com consequências diretas para a saúde da população.</p>
+                <p class="impacts_amb_alt-itens">- Comunidades de baixa renda, muitas vezes situadas em <span class="span_text">áreas periféricas</span> ou próximas a <a href="https://www.ecycle.com.br/lixao/">lixões</a> e <a href="https://www.ecycle.com.br/aterro-sanitario/">aterros sanitários</a>, são mais propensas a sofrer com a poluição resultante do <span class="span_text">descarte inadequado de lixo eletrônico</span>. Elas enfrentam o impacto de solos e águas contaminados, com consequências diretas para a saúde da população.</p>
+                </div>
             </div>
         </div>
 
-    <div class="div_imgsocialimg">
+    <div class="div_footage">
         <div class="img_02">
             <img src="../navcode/images/ChatGPT Image 16 de abr. de 2025, 00_11_28.png" alt="aaaa">
         </div> <br><br><br><br>
@@ -172,7 +175,7 @@
 
     <!--PAUSE BREAK-->
 
-    <section class="Lixo_Eletronico" id="Lixo Eletrônico">
+    <section class="Lixo_Eletronico" id="Lixo_Eletrônico">
         <div id="classification">
             <div class="nice_title">
                 <h1> Classificação do Lixo Eletrônico</h1>
@@ -214,26 +217,26 @@
         </div><br>
 
         <div class="impacts_amb_itens">
-            <ul>-> <span class="spanca_xota">Lei 12.305/2010:</span></ul>
+            <ul>-> <span class="span_text">Lei 12.305/2010:</span></ul>
             <li>Estabelece a Política Nacional de Resíduos Sólidos (PNRS) Inclui o lixo eletrônico no texto da PNRS, de 1998;</li>
             <li>Estabelece uma responsabilidade compartilhada pelo ciclo de vida do produto.</li><br>
 
-            <ul>-> <span class="spanca_xota">Resolução Conama 452/2012:</span></ul>
+            <ul>-> <span class="span_text">Resolução Conama 452/2012:</span></ul>
             <li>Estabelece critérios e procedimentos para o descarte de pilhas e baterias, incluindo aquelas presentes em dispositivos eletrônicos.</li><br>
 
-            <ul>-> <span class="spanca_xota">Decreto nº 10.240/2020:</span></ul>
+            <ul>-> <span class="span_text">Decreto nº 10.240/2020:</span></ul>
             <li>Trata da logística reversa de produtos eletroeletrônicos.</li><br>
             
-            <ul>-> <span class="spanca_xota">Decreto nº 10.936/2022:</span></ul>
+            <ul>-> <span class="span_text">Decreto nº 10.936/2022:</span></ul>
             <li>Regulamentou a Lei nº 12.305/2010.</li><br>
 
-            <ul>-> <span class="spanca_xota">Decreto nº 11.043/2022:</span></ul>
+            <ul>-> <span class="span_text">Decreto nº 11.043/2022:</span></ul>
             <li>Estabelece o Plano Nacional de Resíduos Sólidos.</li><br>
         </div>
     </div>
 
         <div id="outros_img">
-            <video src="../navcode/video/Bilada circulation Para YT music.mp4" playsinline controls autoplay></video>
+            <video src="../navcode/video/video.mp4" autoplay controls></video>
         </div>
 
     </section><br>
@@ -244,13 +247,13 @@
 
 <footer class="home_footer">
         <div id="footer-links">
-            <a target="_blank" href="#">Alunos</a>
+            <a target="_blank" href="page_party.html">Alunos</a>
             <a target="_blank" href ="https://www.unifenas.br/">Unifenas</a>
             <a target="_blank" href="referencias.html">Referências</a>
         </div>
 
         <div id="social-icons">
-            <a target="_blank" href="https://brasilescola.uol.com.br/biologia/ coleta-seletiva-casa.htm"><span class="material-symbols-outlined">recycling</span></a>
+            <a target="_blank" href="https://www.ecycle.com.br/reciclagem-de-eletronicos/"><span class="material-symbols-outlined">recycling</span></a>
         </div>
         
         <div id="footer-copyright">

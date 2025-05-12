@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style_re.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Descarte Eletrônico em Alfenas | Go!Recycle</title>
+</head>
+<body>
+ 
+  <header>
+    <nav id="navbar">
+      <a href="homepage.html"><i class="fa-solid fa-recycle" id="nav_logo"> Go!Recycle</i></a>    <!--logo-->
+      <button data-index="0">Prefeitura</button>
+      <button data-index="1">Alfenas Ambiental</button>
+      <button data-index="2">UNIFAL-MG</button>
+      <button data-index="3">Vida Viva</button>
+    </nav>
+  </header>
+
+  <!-- Janela -->
+<main>
+  <div class="content">
+    <div class="window">
+      <div class="map-container">
+        <!-- Aparece o mapa aqui -->
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1857.053072253952!2d-45.9498182!3d-21.425072499999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b5f5a5e6deaac9%3A0x5091575297740ab6!2sPrefeitura%20Municipal%20de%20Alfenas%20-%20MG!5e0!3m2!1spt-BR!2sbr!4v1745503042669!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="info-panel">
+        <textarea id="infoText">
+Ecoponto - Prefeitura Municipal de Alfenas:
+Local para descarte de eletrônicos no prédio da Prefeitura.
+(Observação: Pilhas, lâmpadas e baterias não devem ser descartadas.)
+        </textarea>
+      </div>
+    </div>
+  </div>
+</main>
+  
+  <script>
+    const locations = [
+      { 
+        lat: -21.42512741118613,  // Prefeitura
+        lng: -45.949767243095266, 
+        zoom: 17,
+        info: "Ecoponto - Prefeitura Municipal de Alfenas:\nLocal para descarte de eletrônicos no prédio da Prefeitura.\n(Observação: Pilhas, lâmpadas e baterias não devem ser descartadas.)"
+      },
+      { 
+        lat: -21.41006978033587, // Alfenas Ambiental
+        lng: -45.973905575618154, 
+        zoom: 17,
+        info: "Ponto de Coleta - Alfenas Ambiental:\nUnidade de coleta para resíduos eletrônicos. Verifique os horários de funcionamento."
+      },
+      { 
+        lat: -21.420964604560012, // Unifal
+        lng: -45.94861900506598, 
+        zoom: 17,
+        info: "Ponto de Coleta - UNIFAL-MG:\nEspaço destinado à reciclagem segura de resíduos eletrônicos na UNIFAL-MG."
+      },
+      { 
+        lat: -21.43082050408932, // Vida Viva
+        lng: -45.959207436363265, 
+        zoom: 17,
+        info: "Ecoponto - Vida Viva:\nLocal destinado ao descarte adequado de resíduos eletrônicos, conforme recomendações ambientais."
+      },
+     
+    ];
+    
+   
+    function updateMap(index) {
+      const loc = locations[index];
+      const url = `https://www.google.com/maps?q=${loc.lat},${loc.lng}&hl=pt-BR&z=${loc.zoom}&output=embed`;
+      document.getElementById('map').src = url;
+      document.getElementById('infoText').value = loc.info;
+      animateInfo();
+    }
+    
+   
+    function animateInfo() {
+      const infoElem = document.getElementById('infoText');
+      infoElem.classList.remove('fade-transition');
+      void infoElem.offsetWidth;  
+      infoElem.classList.add('fade-transition');
+    }
+    
+    
+    document.querySelectorAll('nav button').forEach(button => {
+      button.addEventListener('click', () => {
+        const index = parseInt(button.getAttribute('data-index'));
+        updateMap(index);
+      });
+    });
+  </script>
+
+  <script src="javascript/script.js"></script>
+
+</body>
+</html>

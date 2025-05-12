@@ -1,5 +1,5 @@
-const track = document.getElementById("carouselTrack");
-const slides = document.querySelectorAll(".slide");
+const track = document.getElementById('carouselTrack');
+const slides = document.querySelectorAll('.slide');
 let currentIndex = 0;
 
 function moveSlide(direction) {
